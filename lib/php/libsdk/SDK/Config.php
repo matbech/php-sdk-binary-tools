@@ -35,7 +35,7 @@ class Config
 	protected static $currentArchName = NULL;
 
 	/** @var ?string */
-	protected static $currentCrtName = NULL;
+	protected static $currentCrtName = 'vs17';
 
 	/** @var ?string */
 	protected static $currentStabilityName = NULL;
@@ -175,11 +175,6 @@ class Config
 							$data[$b[1]] = array();
 						}
 
-						// HACK: redirect vs17 to vs18
-						if ($b[2] == 'vs17')
-						{
-							$b[2] = 'vs18';
-						}
 						$data[$b[1]][$b[2]][] = array("arch" => $b[3], "stability" => $b[4]);
 					}
 
