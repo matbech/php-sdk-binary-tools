@@ -24,7 +24,7 @@ $stability = NULL;
 $arch = NULL;
 $branch = NULL;
 $crt = NULL;
-$force = false;
+$force = true;
 $backup = true;
 
 try {
