@@ -35,7 +35,7 @@ class Config
 	protected static $currentArchName = NULL;
 
 	/** @var ?string */
-	protected static $currentCrtName = 'vs17';
+	protected static $currentCrtName = NULL;
 
 	/** @var ?string */
 	protected static $currentStabilityName = NULL;
@@ -105,7 +105,7 @@ class Config
 
 	public static function setCurrentCrtName(string $crt) : void
 	{/*{{{*/
-		self::$currentCrtName = $crt;
+		self::$currentCrtName = 'vs17'; //$crt;
 	}	/*}}}*/
 
 	public static function getCurrentCrtName() : ?string
